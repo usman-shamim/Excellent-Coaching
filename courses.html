@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body style="overflow-x: hidden;">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assests/imges/logo/logo.png" alt="Excellent Coaching Logo" height="40" class="me-2">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" id="nav-btn">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faculty.html">Faculty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sucess stories.html">Success Stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricelist.html">Price List</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Courses
+                            </a>
+                            <ul class="dropdown-menu">
+
+                                <li><a class="dropdown-item" href="courses.html">Courses</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="languages.html">Languages</a></li>
+                                <li><a class="dropdown-item" href="maths.html">Maths</a></l <li><a class="dropdown-item"
+                                        href="commerce.html">Commerce</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn theme-switch toggle-mode-btn" type="button" id="darkModeToggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#e3e3e3">
+                                <path
+                                    d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#e3e3e3">
+                                <path
+                                    d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+                            </svg>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container py-5">
+            <div class="row align-items-center justify-content-center px-3">
+                <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-0" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <h2 class="text-lg-start text-center">Choose Your Course Stream</h2>
+                    <p class="lead text-lg-start text-center">
+                        At Excellent Coaching, we offer subject-focused courses to meet
+                        the academic needs of every student. Select your preferred stream,
+                        like <a href="commerce.html"><span class="fw-bold text-warning">Commerce</span></a>,
+                        <a href="maths.html"><span class="fw-bold text-warning">Mathematics</span></a>, or
+                        <a href="languages.html"><span class="fw-bold text-warning">Languages</span></a>, to explore
+                        subject details and access downloadable resources. Our expertly
+                        designed material helps you learn more effectively and achieve
+                        academic success.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12" data-aos="fade-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <div class="d-flex flex-column align-items-center gap-3">
+                        <img src="assests/imges/course/commerce.jpg" style="box-shadow: var(--shadow)" alt="top"
+                            class="img-fluid w-50 rounded" />
+                        <img src="assests/imges/course/math.jpg" style="box-shadow: var(--shadow)" alt="middle"
+                            class="img-fluid w-75 rounded" />
+                        <img src="assests/imges/lan 1.jpg" style="box-shadow: var(--shadow)" alt="bottom"
+                            class="img-fluid w-50 rounded" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr />
+
+        <section class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0 text-md-start" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <h3>Course Streams Offered</h3>
+                    <p class="lead">
+                        We offer three major streams: <strong>Commerce</strong>,
+                        <strong>Mathematics</strong>, and <strong>Languages</strong>. Each
+                        includes a structured set of subjects, taught by experienced
+                        faculty.
+                    </p>
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-12">
+                            <div class="card h-100 text-center p-4" style="box-shadow: var(--shadow)">
+                                <i class="fa-solid fa-globe fa-2x mb-3"></i>
+                                <h4>Commerce</h4>
+                                <p class="lead">
+                                    Prepare for business, finance, and accountancy fields with
+                                    foundational and advanced subjects.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100 text-center p-4" style="box-shadow: var(--shadow)">
+                                <i class="fa-solid fa-rotate fa-2x mb-3"></i>
+                                <h4>Mathematics</h4>
+                                <p class="lead">
+                                    Master essential topics for school, exams, and higher
+                                    studies in science and technology.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100 text-center p-4" style="box-shadow: var(--shadow)">
+                                <i class="fa-solid fa-star fa-2x mb-3"></i>
+                                <h4>Languages</h4>
+                                <p class="lead">
+                                    Enhance communication skills and literature understanding in
+                                    English and regional languages.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+
+        <section class="mb-5">
+            <div class="row align-items-center justify-content-around">
+                <div class="col-12 col-md-5 mb-4 text-center" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <img class="img-fluid rounded" style="box-shadow: var(--shadow)"
+                        src="assests/imges/course/commerce.jpg" alt="Coaching Overview" />
+                </div>
+                <div class="col-12 col-md-5 mb-4 text-center text-md-start" data-aos="fade-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <h3>Commerce Stream</h3>
+                    <p class="lead">
+                        Explore our Commerce subjects, carefully curated for academic and
+                        competitive success. Click to download each syllabus in Word
+                        format.
+                    </p>
+
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Accountancy
+                            <a href="assests/word files/commerce/Accountancy_Course_Overview.docx" type="button"
+                                class="btn-sm" download><button style="box-shadow: var(--shadow);">Download Word
+                                    File</button></a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Business Studies
+                            <a href="assests/word files/commerce/Business_Studies_Course_Overview.docx" type="button"
+                                class="btn-sm" download><button style="box-shadow: var(--shadow);">Download Word
+                                    File</button></a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Economics
+                            <a href="assests/word files/commerce/Economics_Course_Overview.docx" type="button"
+                                class="btn-sm" download><button style="box-shadow: var(--shadow);">Download Word
+                                    File</button></a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Entrepreneurship
+                            <a href="assests/word files/commerce/Entrepreneurship_Course_Overview.docx" type="button"
+                                class="btn-sm" download><button style="box-shadow: var(--shadow);">Download Word
+                                    File</button></a>
+                        </li>
+                    </ul>
+                    <button type="button" onclick="window.location.href='commerce.html'"
+                        style="box-shadow: var(--shadow);">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <div class="row align-items-center justify-content-around">
+                <div class="col-12 col-md-5 mb-4 text-center text-md-start" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <h3>Mathematics Stream</h3>
+                    <p class="lead">
+                        Our Mathematics stream includes subjects from basic to advanced
+                        levels, helping students build strong problem-solving skills.
+                    </p>
+
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Algebra
+                            <a href="assests/word files/maths/Algebra.docx" type="button"
+                                class="btn-sm" download><button style="box-shadow: var(--shadow);">Download Word
+                                    File</button></a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Calculus
+                            <a href="assests/word files/maths/Calculus.docx" type="button"
+                                class="btn-sm" download><button style="box-shadow: var(--shadow);">Download Word
+                                    File</button></a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Statistics
+                            <a href="assests/word files/maths/Statistics.docx" type="button"
+                                class="btn-sm" download><button style="box-shadow: var(--shadow);">Download Word
+                                    File</button></a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Geometry
+                            <a href="assests/word files/maths/Geometry.docx" type="button"
+                                class="btn-sm" download><button style="box-shadow: var(--shadow);">Download Word
+                                    File</button></a>
+                        </li>
+                    </ul>
+                    <button type="button" onclick="window.location.href='maths.html'"
+                        style="box-shadow: var(--shadow);">
+                        Learn More
+                    </button>
+                </div>
+                <div class="col-12 col-md-5 mb-4 text-center" data-aos="fade-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <img class="img-fluid rounded" style="box-shadow: var(--shadow)" src="assests/imges/course/math.jpg"
+                        alt="Coaching Overview" />
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <div class="row align-items-center justify-content-around">
+                <div class="col-12 col-md-5 mb-4 text-center" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <img class="img-fluid rounded" style="box-shadow: var(--shadow)"
+                        src="assests/imges/course/lan 1.jpg" alt="Coaching Overview" />
+                </div>
+                <div class="col-12 col-md-5 mb-4 text-center text-md-start" data-aos="fade-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <h3>Languages Stream</h3>
+                    <p class="lead">
+                        Our Languages stream is designed to enhance communication,
+                        comprehension, and cultural understanding.
+                    </p>
+
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            English
+                            <a href="assests/word files/languages/English Course Overview.docx" type="button"
+                                class="btn-sm" download><button style="box-shadow: var(--shadow);">Download Word
+                                    File</button></a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            German
+                            <a href="assests/word files/languages/German Course Overview.docx" type="button"
+                                class="btn-sm" download><button style="box-shadow: var(--shadow);">Download Word
+                                    File</button></a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            French
+                            <a href="assests/word files/languages/French Course Overview.docx" type="button"
+                                class="btn-sm" download><button style="box-shadow: var(--shadow);">Download Word
+                                    File</button></a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Japanese
+                            <a href="assests/word files/languages/Japanese Course Overview.docx" type="button"
+                                class="btn-sm" download><button style="box-shadow: var(--shadow);">Download Word
+                                    File</button></a>
+                        </li>
+                    </ul>
+                    <button type="button" onclick="window.location.href='languages.html'"
+                        style="box-shadow: var(--shadow);">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="container py-5" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-center mb-4">Our Courses</h2>
+
+            <div class="d-flex justify-content-center flex-wrap gap-2 mb-4">
+                <button class="btn filter-btn btn-outline-primary" data-filter="all">All Courses</button>
+                <button class="btn filter-btn btn-outline-primary" data-filter="Languages">Languages</button>
+                <button class="btn filter-btn btn-outline-primary" data-filter="Commerce">Commerce</button>
+                <button class="btn filter-btn btn-outline-primary" data-filter="Maths">Mathematics</button>
+            </div>
+
+            <div class="row" id="course-list">
+                <div class="col-md-4 mb-4 course-card" data-category="Languages">
+                    <div class="card h-100" style="box-shadow: var(--shadow);">
+                        <img src="assests/imges/course/eng.jpg" class="card-img-top rounded" alt="English">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">English</h5>
+                            <p class="card-text">Develop strong reading, writing, and speaking skills for academics and
+                                communication in global settings.</p>
+                            <button type="button" onclick="window.location.href='languages.html'"
+                                style="box-shadow: var(--shadow);">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 course-card" data-category="Commerce">
+                    <div class="card h-100">
+                        <img src="assests/imges/course/E.jpg" class="card-img-top rounded" alt="Economics">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Economics</h5>
+                            <p class="card-text">Study how economies work, including concepts like supply and demand,
+                                inflation, and government policy.</p>
+                            <button type="button" onclick="window.location.href='commerce.html'"
+                                style="box-shadow: var(--shadow);">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 course-card" data-category="Maths">
+                    <div class="card h-100">
+                        <img src="assests/imges/course/geometry.jpg" class="card-img-top rounded" alt="Geometry">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Geometry & Trigonometry</h5>
+                            <p class="card-text">Study shapes, angles, theorems, and trigonometric identities used in
+                                math and science applications.</p>
+                            <button type="button" onclick="window.location.href='maths.html'"
+                                style="box-shadow: var(--shadow);">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 course-card" data-category="Languages">
+                    <div class="card h-100" style="box-shadow: var(--shadow);">
+                        <img src="assests/imges/course/german.jpg" class="card-img-top rounded" alt="german">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">German</h5>
+                            <p class="card-text">Learn practical German vocabulary and grammar for travel, education, or
+                                business in German-speaking countries.</p>
+                            <button type="button" onclick="window.location.href='languages.html'"
+                                style="box-shadow: var(--shadow);">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 course-card" data-category="Commerce">
+                    <div class="card h-100">
+                        <img src="assests/imges/course/account.jpg" class="card-img-top rounded" alt="account">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Accountancy</h5>
+                            <p class="card-text">Understand core accounting principles, including balance sheets,
+                                ledgers, and financial reporting.</p>
+                            <button type="button" onclick="window.location.href='commerce.html'"
+                                style="box-shadow: var(--shadow);">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 course-card" data-category="Maths">
+                    <div class="card h-100">
+                        <img src="assests/imges/course/algebra.jpg" class="card-img-top rounded" alt="algebra">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Algebra</h5>
+                            <p class="card-text">Master variables, equations, inequalities, and algebraic expressions to
+                                solve complex problems.</p>
+                            <button type="button" onclick="window.location.href='maths.html'"
+                                style="box-shadow: var(--shadow);">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 course-card" data-category="Languages">
+                    <div class="card h-100" style="box-shadow: var(--shadow);">
+                        <img src="assests/imges/course/japnese.jpg" class="card-img-top rounded" alt="japnese">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Japanese</h5>
+                            <p class="card-text">Gain essential Japanese skills, including writing systems and
+                                conversational phrases for real-world use.</p>
+                            <button type="button" onclick="window.location.href='languages.html'"
+                                style="box-shadow: var(--shadow);">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 course-card" data-category="Commerce">
+                    <div class="card h-100">
+                        <img src="assests/imges/course/ES.jpg" class="card-img-top rounded" alt="Economics">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Entrepreneurship</h5>
+                            <p class="card-text">Discover how to develop business ideas, create plans, and understand
+                                startup challenges and innovation.</p>
+                            <button type="button" onclick="window.location.href='commerce.html'"
+                                style="box-shadow: var(--shadow);">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 course-card" data-category="Maths">
+                    <div class="card h-100">
+                        <img src="assests/imges/course/stat.jpg" class="card-img-top rounded" alt="statistcts">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Statistics</h5>
+                            <p class="card-text">Understand how to collect, organize, and interpret data for real-life
+                                decision making.</p>
+                            <button type="button" onclick="window.location.href='maths.html'"
+                                style="box-shadow: var(--shadow);">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 course-card" data-category="Languages">
+                    <div class="card h-100" style="box-shadow: var(--shadow);">
+                        <img src="assests/imges/course/franch.jpg" class="card-img-top rounded" alt="French">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">French</h5>
+                            <p class="card-text">Explore French language basics along with cultural insights to improve
+                                communication and understanding.</p>
+                            <button type="button" onclick="window.location.href='languages.html'"
+                                style="box-shadow: var(--shadow);">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 course-card" data-category="Commerce">
+                    <div class="card h-100">
+                        <img src="assests/imges/course/bs.jpg" class="card-img-top rounded" alt="Economics">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Business Studies</h5>
+                            <p class="card-text">Learn the fundamentals of business management, marketing, operations,
+                                and organizational structures.</p>
+                            <button type="button" onclick="window.location.href='commerce.html'"
+                                style="box-shadow: var(--shadow);">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 course-card" data-category="Maths">
+                    <div class="card h-100">
+                        <img src="assests/imges/course/calculus.jpg" class="card-img-top rounded" alt="calculus">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Calculus</h5>
+                            <p class="card-text">Learn about limits, derivatives, and integrals to analyze dynamic
+                                systems and changes.</p>
+                            <button type="button" onclick="window.location.href='maths.html'"
+                                style="box-shadow: var(--shadow);">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pt-5 pb-3">
+        <div class="container">
+            <div class="row text-start">
+                <div class="col-12 col-md-3 mb-3">
+                    <a href="index.html">
+                        <img src="assests/imges/logo/logo.png" alt="Excellent Coaching Logo" height="50">
+                    </a>
+                    <div>&nbsp;</div>
+                    <div class="mt-3">
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <h6 class="fw-bold">Other Pages</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <h6>&nbsp;</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="sucess stories.html">Success Stories</a></li>
+                        <li><a href="pricelist.html">Price List</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <h6 class="fw-bold"><a href="courses.html">Courses</a></h6>
+                    <ul class="list-unstyled">
+                        <li><a href="commerce.html">Commerce</a></li>
+                        <li><a href="maths.html">Maths</a></li>
+                        <li><a href="languages.html">Languages</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-top pt-3 d-flex flex-column flex-md-row justify-content-between text-center text-md-start small">
+                <p class="mb-2 mb-md-0">
+                    &copy; 2024 Your Website. All rights reserved.
+                </p>
+                <div>
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".filter-btn").click(function () {
+                const category = $(this).data("filter");
+
+                $(".filter-btn").removeClass("btn-primary").addClass("btn-outline-primary");
+                $(this).removeClass("btn-outline-primary").addClass("btn-primary");
+
+                if (category === "all") {
+                    $(".course-card").show();
+                } else {
+                    $(".course-card").hide();
+                    $(`.course-card[data-category="${category}"]`).show();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
