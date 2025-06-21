@@ -1,28 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-h1, h2, h3, h4, h5, h6 {
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
-    }
-a {
-  text-decoration: none !important;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
 }
+
+a {
+  text-decoration: none;
+}
+
 :root {
-      --bg: #fdfdfd;
-      --text: #1c1c1c;
-      --primary: #ff6f00;
-      --primary-hover: #e65c00;
-      --secondary: #ffffff;
-      --accent: #003366;
-      --card-bg: rgba(255, 255, 255, 0.8);
-      --border: rgba(0, 0, 0, 0.1);
-      --link: #ff6f00;
-      --link-hover: #ff8f1f;
-      --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      --glass-blur: blur(6px);
-      --background: rgba(255, 255, 255, 0.15);
-    }
+  --bg1: #fdfdfd;
+  --bg: #fdfdfd;
+  --text: #1c1c1c;
+  --primary: #ff6f00;
+  --primary-hover: #e65c00;
+  --secondary: #ffffff;
+  --accent: #003366;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --border: rgba(0, 0, 0, 0.1);
+  --link: #ff6f00;
+  --link-hover: #ff8f1f;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --glass-blur: blur(6px);
+  --background: rgba(255, 255, 255, 0.15);
+}
 
 .dark-mode {
+  --bg1: #a39e9e88;
   --bg: #0a0f1a;
   --text: #f0f0f0;
   --primary: #ff9100;
@@ -40,14 +50,16 @@ a {
 
 /* navbar */
 nav {
-  background-color: var(--bg);
+  background-color: var(--bg1);
   color: var(--text);
   transition: background-color 0.3s, color 0.3s;
 }
-#nav-btn{
+
+#nav-btn {
   color: var(--text);
-  background-color: var(--primary) !important; 
+  background-color: var(--primary) !important;
 }
+
 nav a {
   color: var(--primary);
   text-decoration: none;
@@ -176,38 +188,44 @@ button:hover {
 
 .hero {
   background-color: var(--secondary);
-  background: url(assests/imges/hero\ 1.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.301),rgba(0, 0, 0, 0.301)) , url(assests/imges/hero\ 1.jpg) center/cover no-repeat;
   height: 75vh;
 }
+
 .hero-about {
   background-color: var(--secondary);
-  background: url(assests/imges/about.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.301),rgba(0, 0, 0, 0.301)) ,url(assests/imges/about.jpg) center/cover no-repeat;
   height: 75vh;
-  
+
 }
+
 .hero-contact {
   background-color: var(--secondary);
-  background: url(assests/imges/contact.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.301),rgba(0, 0, 0, 0.301)) ,url(assests/imges/contact.jpg) center/cover no-repeat;
   height: 75vh;
 }
+
 .hero-faculty {
   background-color: var(--secondary);
-  background: url(assests/imges/faculty.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.301),rgba(0, 0, 0, 0.301)) ,url(assests/imges/faculty.jpg) center/cover no-repeat;
   height: 75vh;
 }
+
 .hero-price {
   background-color: var(--secondary);
-  background: url(assests/imges/price\ list.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.301),rgba(0, 0, 0, 0.301)) ,url(assests/imges/price\ list.jpg) center/cover no-repeat;
   height: 75vh;
 }
+
 .hero-faq {
   background-color: var(--secondary);
-  background: url(assests/imges/faq.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.301),rgba(0, 0, 0, 0.301)) ,url(assests/imges/faq.jpg) center/cover no-repeat;
   height: 75vh;
 }
+
 .hero-ss {
   background-color: var(--secondary);
-  background: url(assests/imges/ss/ss.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.301),rgba(0, 0, 0, 0.301)) ,url(assests/imges/ss/ss.jpg) center/cover no-repeat;
   height: 75vh;
 }
 
@@ -222,8 +240,7 @@ button:hover {
 
 .cta-price {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(assests/imges/premium_photo-1661436185717-f779de991178.jpeg)
-      center/cover no-repeat;
+    url(assests/imges/premium_photo-1661436185717-f779de991178.jpeg) center/cover no-repeat;
 }
 
 .card i {
@@ -248,14 +265,14 @@ hr {
 
 .mission {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(assests/imges/gabriel-bassino-zEawlLdVloo-unsplash.jpg) center/cover
-      no-repeat;
+    url(assests/imges/gabriel-bassino-zEawlLdVloo-unsplash.jpg) center/cover no-repeat;
 }
 
 .image-about {
   height: 20vh;
   width: 50vw;
 }
+
 .image-about img {
   height: 100%;
   width: 100%;
@@ -274,25 +291,25 @@ hr {
 }
 
 .accordion-button {
-  background-color: var(--card-bg);  
-  color: var(--text);                
+  background-color: var(--card-bg);
+  color: var(--text);
   box-shadow: none;
   transition: background-color 0.3s, color 0.3s;
   border: 1px solid var(--border);
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: var(--primary); 
+  background-color: var(--primary);
   color: #fff;
 }
 
 .accordion-body {
-  background-color: var(--secondary); 
+  background-color: var(--secondary);
   color: var(--text);
   border-top: 1px solid var(--border);
 }
 
-.table{
+.table {
   background-color: var(--bg);
   color: var(--text);
 }
@@ -341,40 +358,40 @@ footer i :hover {
 }
 
 button {
-      background-color: var(--primary);
-      color: white;
-      border: none;
-      border-radius: 6px;
-      padding: 8px 16px;
-      transition: background-color 0.3s;
-    }
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
 
-    button:hover {
-      background-color: var(--primary-hover);
-    }
+button:hover {
+  background-color: var(--primary-hover);
+}
 
-    .card {
-      background-color: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      box-shadow: var(--shadow);
-    }
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
 
-    .filter-btn {
-      margin: 5px;
-    }
+.filter-btn {
+  margin: 5px;
+}
 
-    .btn-primary {
-      background-color: var(--primary) !important;
-      border-color: var(--primary) !important;
-    }
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
 
-    .btn-outline-primary {
-      color: var(--primary);
-      border-color: var(--primary);
-    }
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
 
-    .btn-outline-primary:hover {
-      background-color: var(--primary);
-      color: white;
-    }
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  color: white;
+}

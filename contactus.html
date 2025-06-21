@@ -17,9 +17,9 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="assests/imges/logo/logo.png" alt="Excellent Coaching Logo" height="40" class="me-2">
+                    <img src="assests/imges/logo/logo.png" alt="Excellent Coaching Logo" height="72px" class="me-2">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -61,8 +61,8 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li><a class="dropdown-item" href="languages.html">Languages</a></li>
-                                <li><a class="dropdown-item" href="maths.html">Maths</a></l <li><a class="dropdown-item"
-                                        href="commerce.html">Commerce</a></li>
+                                <li><a class="dropdown-item" href="maths.html">Maths</a></li>
+                                <li><a class="dropdown-item" href="commerce.html">Commerce</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -85,6 +85,7 @@
             </div>
         </nav>
     </header>
+
 
     <main>
         <section class="hero-contact d-flex align-items-center justify-content-center">
@@ -201,28 +202,27 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $("#myForm").on("submit", function (e) {
-            e.preventDefault();
-            let name = $("#name").val().trim();
-            let email = $("#email").val().trim();
-            let error = "";
+        $(document).ready(function () {
+            $('#contactForm').submit(function (e) {
+                e.preventDefault();
 
-            if (name === "") {
-                error += "Name is required.<br>";
-            }
+                let user = $('#name').val();
+                let email = $('#email').val();
+                let message = $('#message').val();
 
-            if (email === "") {
-                error += "Email is required.<br>";
-            }
-
-            if (error !== "") {
-                $("#error").html(error);
-            } else {
-                $("#error").html("");
-                alert("Form submitted successfully!");
-            }
+                if (user === '' || email === '' || message === '') {
+                    alert('Please fill in all fields.');
+                } else {
+                    alert('Form Submitted');
+                    $('#name').val('');
+                    $('#email').val('');
+                    $('#message').val('');
+                }
+            });
         });
+
     </script>
 </body>
 
