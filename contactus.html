@@ -223,6 +223,97 @@
         });
 
     </script>
+    <button id="chatToggle" title="Open chat">
+        <i class="fa-solid fa-comment-dots"></i>
+    </button>
+
+    <div id="chatPopup">
+        <div id="chatHeader">
+            <span>Student Assistant</span>
+            <button id="closeChat" style="background:none; padding:0; font-size:1.2rem;">&times;</button>
+        </div>
+        <div id="chat">
+            <div class="msg bot"><b>Bot:</b> Hi! How can I help you with your studies today?</div>
+        </div>
+        <div id="inputContainer">
+            <input id="userInput" type="text" placeholder="Ask about courses, fees..." />
+            <button id="sendBtn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script>
+        const CHATBOT_URL = "http://usman-social.duckdns.org:5678/webhook/website-chatbot";
+        
+        const toggleBtn = document.getElementById("chatToggle");
+        const closeBtn = document.getElementById("closeChat");
+        const popup = document.getElementById("chatPopup");
+        const input = document.getElementById("userInput");
+        const chat = document.getElementById("chat");
+        const sendBtn = document.getElementById("sendBtn");
+
+        // Toggle popup visibility
+        toggleBtn.onclick = () => {
+            const isFlex = popup.style.display === "flex";
+            popup.style.display = isFlex ? "none" : "flex";
+            if (!isFlex) setTimeout(() => input.focus(), 100);
+        };
+
+        closeBtn.onclick = () => {
+            popup.style.display = "none";
+        };
+
+        // Send on Enter key
+        input.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                sendMessage();
+            }
+        });
+
+        sendBtn.onclick = sendMessage;
+
+        async function sendMessage() {
+            const message = input.value.trim();
+            if (!message) return;
+
+            // Add user message
+            chat.innerHTML += `<div class="msg user"><b>You:</b> ${message}</div>`;
+            input.value = "";
+            input.disabled = true;
+
+            // Add spinner
+            const spinnerId = "spinner_" + Date.now();
+            chat.innerHTML += `<div class="msg bot" id="${spinnerId}"><b>Bot:</b> <span class="spinner"></span></div>`;
+            chat.scrollTop = chat.scrollHeight;
+
+            try {
+                const response = await fetch(CHATBOT_URL, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ message: message }),
+                });
+
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+                const data = await response.json();
+                const reply = data.output || "I'm sorry, I didn't get a response.";
+
+                const spinnerDiv = document.getElementById(spinnerId);
+                if (spinnerDiv) spinnerDiv.innerHTML = `<b>Bot:</b> ${reply}`;
+
+            } catch (err) {
+                const spinnerDiv = document.getElementById(spinnerId);
+                if (spinnerDiv) {
+                    spinnerDiv.innerHTML = `<b>Error:</b> Could not connect to server.`;
+                    spinnerDiv.classList.add("error");
+                }
+            }
+
+            input.disabled = false;
+            input.focus();
+            chat.scrollTop = chat.scrollHeight;
+        }
+    </script>
 </body>
 
 </html>
